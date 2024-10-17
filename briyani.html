@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+           .logo{
+            height: 70px;
+            width: 70px;
+            border-radius: 5px;
+            margin-right: 10px;
+           }
+           .logo-heading{
+            color: black;
+            font-weight: 800;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+           }
+           .button1{
+              margin-top:-20px ;
+           }
+           .button1:hover{
+            background-color: rgb(207, 200, 200);
+           }
+           .button2{
+            margin-top:0px ;
+            border-radius: 10px;
+            height: 50px;
+           }
+           .button2:hover{
+            background-color: rgb(206, 206, 206);
+            
+           }
+           .card:hover{
+            transform: scale(0.95);
+            
+           }
+           .heart{
+            margin-top: 0px;
+            margin-left: 270px;
+           }
+           .heart:hover{
+            color: red;
+           }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> Login or <a href="" style="color: rgb(255, 91, 91); text-decoration: none;">Create an account</a></p>
+        <p>_____</p>
+        <label for="" style="font-size: 20px; font-weight: 500;">User name</label><br>
+        <input type="text" placeholder="user name or phone no" style="padding: 10px; border-radius: 7px; border-color: gray;"><br>
+        <label for="" style="font-size: 20px; font-weight: 500;">Password</label><br>
+        <input type="password" placeholder="enter your password" style="padding: 10px; border-radius: 7px; border-color: gray;">
+        <p>By clicking on login ,<a href="" style="color: rgb(255, 91, 91); text-decoration: none;">I accept all terms and conditions , privacy & policy</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-danger">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary " style=" top: 0px;">
+            <div class="container-fluid">
+              <a class="navbar-brand logo-heading" href="#"><img src="images/logo.png" alt="" class="logo">SIZZLE  & SPICE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><button class="btn btn-bg-light button1"><span><i class="fa-solid fa-house-chimney-user" style="margin-right: 10px;"></i></span>HOME</a></button>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link button2" href="login.html"><button class="btn btn-bg-light" style="padding-right: 10px;text-align: center;"><span><i class="fa-solid fa-right-to-bracket" style="margin-right: 0px;"></i></span></button>SPECIAL DISHES</a>
+                  </li>
+                        <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-light" style="width: 100px; height: 50px; margin-top: -4px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span><i class="fa-solid fa-right-to-bracket" style="margin-right: 0px;"></i></span>&nbsp; LOGIN
+                 </button>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle button2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><button class="btn btn-bg-light ">
+                      <span><i class="fa-solid fa-utensils" style="margin-right: 0px;"></i></span></button>TODAY SPECIAL
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="briyani.html">THATHOORI CHICKEN</a></li>
+                      <li><a class="dropdown-item" href="cakes.html">BIRTHDAY CAKE</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="porotta.html">ALOO POROTA</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" style="margin-right:20px;">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-danger" style="width: 150px;" type="submit">Search <span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <br><br><br>
+          <center>
+            <div class="card mb-3" style="max-width: 1230px; height: 300px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="images/card5.jfif" alt="..." height="300px" style="border-radius: 10px;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Chicken Briyani</h5>
+                    <p class="card-text">A rice dish that's celebrated in the Indian subcontinent, especially among the Islamic community. 
+                      Biryani is a mixed rice dish, mainly popular in South Asia. It is made with rice, some type of meat and spices. To cater to vegetarians, in some cases, it is prepared by substituting vegetables or paneer for the meat. </p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <div>
+                      <a href="" class="btn btn-outline-primary"> <i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy now</a>&nbsp;
+                      <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
+          <div class="bg-dark">
+            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: aliceblue; text-align: center;" >RECOMMANDED FOR YOU</h1>
+          </div>
+          <div style="display: flex; margin-left: 70px; box-shadow: 20px;">
+            <div class="card" style="width: 310px; margin:50px;">
+            <img src="images/card1.jfif" class="card-img-top" alt="..." height="250px">
+            
+            <p style="color: white; font-size: 24px; font-weight: 1000; margin-top: -40px;">&nbsp;&nbsp;&nbsp;100/- Flat offer for you</p>
+            <div class="card-body">
+              <h5 class="card-title">Thathoori Chicken</h5>
+              <p class="card-text">A North Indian dish that's cooked in a tandoor, or clay oven.The nicest thing about tandoori chicken, though, is that it's really easy to make. </p>
+              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
+              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
+            </div>
+          </div>
+          <div class="card" style="width: 310px; margin:50px;">
+            <img src="images/mutton.jfif" class="card-img-top" alt="..." height="250px">
+            <div class="card-body">
+              <h5 class="card-title">Mutton Biryani</h5>
+              <p class="card-text">
+                A flavorful dish that combines sweet, salty, crunchy, spicy, and savory elements, and is popular at street stalls and roadside stands. </p>
+              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
+              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
+            </div>
+          </div>
+          <div class="card" style="width: 310px; margin:50px;">
+            <img src="images/beef.jfif" class="card-img-top" alt="..." height="250px">
+            <div class="card-body">
+              <h5 class="card-title">Beef biriyani</h5>
+              <p class="card-text">A chewy flatbread made from white flour, yeast, eggs, milk, salt, and sugar, and baked in a tandoor oven</p>
+              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
+              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <footer style="display: flex; padding-top: 50px;" class="bg-body-tertiary">
+          <ul style="margin-right: 100px;">
+            <img src="images/logo.png" alt="" height="70px" width="100px" style="border-radius: 10px;">
+            <p style="color: gray;">© 2024 spice Limited</p>
+          </ul>
+          <ul style="margin-right: 30px;">
+            <h3>Company</h3>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>About us</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice corporation</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Careers</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Terms</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice one</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice instamart</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice Dineout</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice dine</li></a><br>
+          </ul>
+          <ul  style="margin-right: 30px;">
+            <h3>Contact Us</h3>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Help & Support Us</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Partner With Us</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Ride With Us</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice News</li></a><br>
+          </ul>
+          <ul  style="margin-right: 30px;">
+            <h3>Available In</h3>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Chennai</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Delhi</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Mumbai</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Kolkatha</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Hyderabad</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Bangalore</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Pune</li></a><br>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                200+ cities
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#"><h3>other cities</h3></a></li>
+                <li><a class="dropdown-item" href="#">Thrichy</a></li>
+                <li><a class="dropdown-item" href="#">Salem</a></li>
+                <li><a class="dropdown-item" href="#">Kallakurichi</a></li>
+                <li><a class="dropdown-item" href="#">Namakkal</a></li>
+              </ul>
+            </div>
+          </ul>
+          <ul  style="margin-right: 30px;">
+            <h3>Life At Spice</h3>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li></li>Explore With Spice</a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Snacables</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice Genie</li></a><br>
+            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice News</li></a><br>
+          </ul>
+          <ul  style="margin-right: 30px;">
+            <h3>Social Links</h3>
+            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;</a>
+            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;</a>
+            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-telegram"></i>&nbsp;&nbsp;</a>
+            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;</a>
+            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;</a>
+          </ul>
+        </footer>
+          </body>
+</html>
