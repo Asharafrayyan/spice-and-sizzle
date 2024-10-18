@@ -32,9 +32,10 @@
         
        }
        .card:hover{
-        transform: scale(0.95);
-        
-       }
+            transform: scale(0.95);
+            box-shadow:0 5px 10px black;
+            transition: transform 0.4s ease, box-shadow 0.3s ease;
+           }
        .heart{
         margin-top: 0px;
         margin-left: 270px;
@@ -42,6 +43,12 @@
        .heart:hover{
         color: red;
        }
+       .image{
+            opacity: 1;
+           }
+           .image:hover{
+            opacity: 0.5;
+           }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
@@ -55,7 +62,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   </div>
   <div class="modal-body">
-    <p> Login or <a href="" style="color: rgb(255, 91, 91); text-decoration: none;">Create an account</a></p>
+    <p> Login or <a href="register.html" style="color: rgb(255, 91, 91); text-decoration: none;">Create an account</a></p>
     <p>_____</p>
     <label for="" style="font-size: 20px; font-weight: 500;">User name</label><br>
     <input type="text" placeholder="user name or phone no" style="padding: 10px; border-radius: 7px; border-color: gray;"><br>
@@ -138,7 +145,7 @@
         </button>
       </div>
       <br>
-      <div style="display: flex;">
+      <div style="display: flex; overflow: hidden;">
         <h4 style="margin-left: 50px;">What's On your Mind?</h4>
         <div style="margin-left: -300px; margin-top: 50px;">
           <a href="briyani.html" style="text-decoration: none; color: gray;"><img src="images/briyani.avif" alt="" height="200px" width="150px">
@@ -161,19 +168,19 @@
           </a>
         </div>
         <div style=" margin-top: 50px;">
-          <a href="" style="text-decoration: none; color: gray;"><img src="images/Pav Bhaji.avif" alt="" height="200px" width="150px">
+          <a href="pavbajji.html" style="text-decoration: none; color: gray;"><img src="images/Pav Bhaji.avif" alt="" height="200px" width="150px">
           </a>
         </div>
         <div style=" margin-top: 50px;">
-          <a href="" style="text-decoration: none; color: gray;"><img src="images/North Indian.avif" alt="" height="200px" width="150px">
+          <a href="northindian.html" style="text-decoration: none; color: gray;"><img src="images/North Indian.avif" alt="" height="200px" width="150px">
           </a>
         </div>
         <div style=" margin-top: 50px;">
-          <a href="" style="text-decoration: none; color: gray;"><img src="images/chole bhature.avif" alt="" height="200px" width="150px">
+          <a href="chole bature.html" style="text-decoration: none; color: gray;"><img src="images/chole bhature.avif" alt="" height="200px" width="150px">
           </a>
         </div>
         <div style=" margin-top: 50px;">
-          <a href="" style="text-decoration: none; color: gray;"><img src="images/ka.avif" alt="" height="200px" width="150px">
+          <a href="kichidi.html" style="text-decoration: none; color: gray;"><img src="images/ka.avif" alt="" height="200px" width="150px">
           </a>
         </div>
       </div>
@@ -184,7 +191,7 @@
       </center>
       <div style="display: flex; margin-left: 70px; box-shadow: 20px;">
         <div class="card" style="width: 310px; margin:50px;">
-        <img src="images/card1.jfif" class="card-img-top" alt="..." height="250px">
+        <img src="images/card1.jfif" class="card-img-top image" alt="..." height="250px">
         
         <p style="color: white; font-size: 24px; font-weight: 1000; margin-top: -40px;">&nbsp;&nbsp;&nbsp;100/- Flat offer for you</p>
         <div class="card-body">

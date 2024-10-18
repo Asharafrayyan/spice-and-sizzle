@@ -40,12 +40,17 @@
             margin-left: 270px;
            }
            .heart:hover{
-            color: red;
+            color: red; 
+           }
+           body{
+            background-image: url(images/bg1.avif);
+            background-size: cover;
+            height: 70vh;
            }
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
-    <body>
+    <body class="bg1">
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -55,7 +60,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p> Login or <a href="register.html" style="color: rgb(255, 91, 91); text-decoration: none;">Create an account</a></p>
+        <p> Login or <a href="" style="color: rgb(255, 91, 91); text-decoration: none;">Create an account</a></p>
         <p>_____</p>
         <label for="" style="font-size: 20px; font-weight: 500;">User name</label><br>
         <input type="text" placeholder="user name or phone no" style="padding: 10px; border-radius: 7px; border-color: gray;"><br>
@@ -86,7 +91,7 @@
                   </li>
                         <!-- Button trigger modal -->
                   <button type="button" class="btn btn-light" style="width: 100px; height: 50px; margin-top: -4px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <span><i class="fa-solid fa-right-to-bracket" style="margin-right: 0px;"></i></span>&nbsp; LOGIN
+                    <span><i class="fa-solid fa-right-to-bracket" style="margin-right: 0px;"></i></span>&nbsp;&nbsp;LOGIN
                  </button>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle button2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><button class="btn btn-bg-light ">
@@ -107,63 +112,27 @@
               </div>
             </div>
           </nav>
-          <br><br><br>
-          <center>
-            <div class="card mb-3" style="max-width: 1230px; height: 300px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="images/card5.jfif" alt="..." height="300px" style="border-radius: 10px;">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Chicken Briyani</h5>
-                    <p class="card-text">A rice dish that's celebrated in the Indian subcontinent, especially among the Islamic community. 
-                      Biryani is a mixed rice dish, mainly popular in South Asia. It is made with rice, some type of meat and spices. To cater to vegetarians, in some cases, it is prepared by substituting vegetables or paneer for the meat. </p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    <div>
-                      <a href="" class="btn btn-outline-primary"> <i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy now</a>&nbsp;
-                      <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </center>
-          <div class="bg-dark">
-            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: aliceblue; text-align: center;" >RECOMMANDED FOR YOU</h1>
-          </div>
-          <div style="display: flex; margin-left: 70px; box-shadow: 20px;">
-            <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/card1.jfif" class="card-img-top" alt="..." height="250px">
-            
-            <p style="color: white; font-size: 24px; font-weight: 1000; margin-top: -40px;">&nbsp;&nbsp;&nbsp;100/- Flat offer for you</p>
-            <div class="card-body">
-              <h5 class="card-title">Thathoori Chicken</h5>
-              <p class="card-text">A North Indian dish that's cooked in a tandoor, or clay oven.The nicest thing about tandoori chicken, though, is that it's really easy to make. </p>
-              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
-            </div>
-          </div>
-          <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/mutton.jfif" class="card-img-top" alt="..." height="250px">
-            <div class="card-body">
-              <h5 class="card-title">Mutton Biryani</h5>
-              <p class="card-text">
-                A flavorful dish that combines sweet, salty, crunchy, spicy, and savory elements, and is popular at street stalls and roadside stands. </p>
-              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
-            </div>
-          </div>
-          <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/beef.jfif" class="card-img-top" alt="..." height="250px">
-            <div class="card-body">
-              <h5 class="card-title">Beef biriyani</h5>
-              <p class="card-text">A chewy flatbread made from white flour, yeast, eggs, milk, salt, and sugar, and baked in a tandoor oven</p>
-              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
-            </div>
-          </div>
-        </div>
+          <br>
+       <div style="margin-left: 800px; border-radius: 15px; margin-right: 100px;" class="bg-body-tertiary">
+         <center>
+                        <h1>Sign up</h1><br>
+                        <p>or <a href="index.html" style="color: red;">login to your account</a></p>
+                    
+                    <label for="" style="font-size: 20px;">Phone</label><br>
+                    <input type="text" placeholder="........."><br>
+                    <label for="" style="font-size: 20px;">Name</label><br>
+                <input type="text" placeholder="........"><br>
+                    <label for="" style="font-size: 20px;">Email</label><br>
+                <input type="text" placeholder="...........">
+                    <br><br>
+                    <a href="" >Have a reference code?</a><br>
+                    <br>
+                    <a href="index.html"><button class="btn btn-outline-danger">continue</button></a><br><br><br>
+                
+                </center>
+       </div>
+       <br>
+        
         <footer style="display: flex; padding-top: 50px;" class="bg-body-tertiary">
           <ul style="margin-right: 100px;">
             <img src="images/logo.png" alt="" height="70px" width="100px" style="border-radius: 10px;">

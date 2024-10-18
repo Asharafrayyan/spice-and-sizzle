@@ -37,7 +37,8 @@
            }
            .card:hover{
             transform: scale(0.95);
-            
+            box-shadow:0 5px 10px black;
+            transition: transform 0.4s ease, box-shadow 0.3s ease;
            }
            .heart{
             margin-top: 0px;
@@ -45,6 +46,12 @@
            }
            .heart:hover{
             color: red;
+           }
+           .image{
+            opacity: 1;
+           }
+           .image:hover{
+            opacity: 0.5;
            }
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -59,7 +66,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p> Login or <a href="" style="color: rgb(255, 91, 91); text-decoration: none;">Create an account
+        <p> Login or <a href="register.html" style="color: rgb(255, 91, 91); text-decoration: none;">Create an account
         </a></p>
         <p>_____</p>
         <label for="" style="font-size: 20px; font-weight: 500;">User name</label><br>
@@ -144,7 +151,7 @@
             </button>
           </div>
           <br>
-          <div style="display: flex;">
+          <div style="display: flex; overflow: hidden;">
             <h4 style="margin-left: 50px;">What's On your Mind?</h4>
             <div style="margin-left: -300px; margin-top: 50px;">
               <a href="briyani.html"  style="text-decoration: none; color: gray;"><img src="images/briyani.avif" alt="" height="200px" width="150px">
@@ -167,19 +174,19 @@
               </a>
             </div>
             <div style=" margin-top: 50px;">
-              <a href="" style="text-decoration: none; color: gray;"><img src="images/Pav Bhaji.avif" alt="" height="200px" width="150px">
+              <a href="pavbajji.html" style="text-decoration: none; color: gray;"><img src="images/Pav Bhaji.avif" alt="" height="200px" width="150px">
               </a>
             </div>
             <div style=" margin-top: 50px;">
-              <a href="" style="text-decoration: none; color: gray;"><img src="images/North Indian.avif" alt="" height="200px" width="150px">
+              <a href="northindian.html" style="text-decoration: none; color: gray;"><img src="images/North Indian.avif" alt="" height="200px" width="150px">
               </a>
             </div>
             <div style=" margin-top: 50px;">
-              <a href="" style="text-decoration: none; color: gray;"><img src="images/chole bhature.avif" alt="" height="200px" width="150px">
+              <a href="chole bature.html" style="text-decoration: none; color: gray;"><img src="images/chole bhature.avif" alt="" height="200px" width="150px">
               </a>
             </div>
             <div style=" margin-top: 50px;">
-              <a href="" style="text-decoration: none; color: gray;"><img src="images/ka.avif" alt="" height="200px" width="150px">
+              <a href="kichidi.html" style="text-decoration: none; color: gray;"><img src="images/ka.avif" alt="" height="200px" width="150px">
               </a>
             </div>
           </div>
@@ -190,7 +197,7 @@
           </center>
           <div style="display: flex; margin-left: 70px; box-shadow: 20px;">
             <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/card1.jfif" class="card-img-top" alt="..." height="250px">
+            <img src="images/card1.jfif" class="card-img-top image" alt="..." height="250px">
             
             <p style="color: white; font-size: 24px; font-weight: 1000; margin-top: -40px;">&nbsp;&nbsp;&nbsp;100/- Flat offer for you</p>
             <div class="card-body">
@@ -201,7 +208,7 @@
             </div>
           </div>
           <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/card2.jfif" class="card-img-top" alt="..." height="250px">
+            <img src="images/card2.jfif" class="card-img-top image" alt="..." height="250px">
             <div class="card-body">
               <h5 class="card-title">Chaat</h5>
               <p class="card-text">
@@ -211,7 +218,7 @@
             </div>
           </div>
           <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/card3.jfif" class="card-img-top" alt="..." height="250px">
+            <img src="images/card3.jfif" class="card-img-top image" alt="..." height="250px">
             <div class="card-body">
               <h5 class="card-title">Naan</h5>
               <p class="card-text">A chewy flatbread made from white flour, yeast, eggs, milk, salt, and sugar, and baked in a tandoor oven</p>
@@ -223,7 +230,7 @@
         
         <div style="display: flex; margin-left: 70px;">
           <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/card5.jfif" class="card-img-top" alt="..." height="250px">
+            <img src="images/card5.jfif" class="card-img-top image" alt="..." height="250px">
             <div class="card-body" id="briyani">
               <h5 class="card-title">Chicken</h5>
               <p class="card-text">A rice dish that's celebrated in the Indian subcontinent, especially among the Islamic community. 
@@ -233,7 +240,7 @@
             </div>
           </div>
           <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/card6.jfif" class="card-img-top" alt="..." height="250px">
+            <img src="images/card6.jfif" class="card-img-top image" alt="..." height="250px">
             <div class="card-body">
               <h5 class="card-title">Chicken 65</h5>
               <p class="card-text">Chicken 65 is a spicy, deep-fried chicken dish originating from Hotel Buhari,[1] Chennai,[2] India, as an entrée, or quick snack.</p>
@@ -242,7 +249,7 @@
             </div>
           </div>
           <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/card7.jfif" class="card-img-top" alt="..." height="250px">
+            <img src="images/card7.jfif" class="card-img-top image" alt="..." height="250px">
             <div class="card-body">
               <h5 class="card-title">Fish curry</h5>
               <p class="card-text">Malabar matthi curry, also known as fish curry, is a traditional Kerala dish. It is usually prepared with fish semi-stewed in a Kerala-style </p>
@@ -253,7 +260,7 @@
         </div>
         <div style="display: flex; margin-left: 70px;">
         <div class="card" style="width: 310px; margin:50px;">
-          <img src="images/card8.jfif" class="card-img-top" alt="..." height="250px">
+          <img src="images/card8.jfif" class="card-img-top image" alt="..." height="250px">
           <div class="card-body">
             <h5 class="card-title"> Crab curry</h5>
             <p class="card-text">Crab curry (Caril de caranguejo in Portuguese) is a typical Indian seafood dish and later incorporated by Portugese into their cuisine</p>
@@ -262,7 +269,7 @@
           </div>
         </div>
         <div class="card" style="width: 310px; margin:50px;">
-          <img src="images/card4.jfif" class="card-img-top" alt="..." height="250px">
+          <img src="images/card4.jfif" class="card-img-top image" alt="..." height="250px">
           <div class="card-body">
             <h5 class="card-title"> Butter Chicken</h5>
             <p class="card-text">A dish that uses tandoori chicken cooked in a tandoor, which gives the chicken a smoky flavor. 
@@ -272,7 +279,7 @@
           </div>
         </div>
         <div class="card" style="width: 310px; margin:50px;">
-          <img src="images/card4.jfif" class="card-img-top" alt="..." height="250px">
+          <img src="images/card4.jfif" class="card-img-top image" alt="..." height="250px">
           <div class="card-body">
             <h5 class="card-title"> Butter Chicken</h5>
             <p class="card-text">A dish that uses tandoori chicken cooked in a tandoor, which gives the chicken a smoky flavor. 
