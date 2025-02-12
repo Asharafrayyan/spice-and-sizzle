@@ -43,6 +43,37 @@
             color: red;
            }
         </style>
+        <style>
+          .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding-top: 50px;
+            background-color: #f8f9fa; /* Adjust based on your design */
+          }
+          
+          .footer-item {
+            color: gray;
+            padding: 30px;
+          }
+          
+          .footer-item h3 {
+            margin-bottom: 10px;
+          }
+          
+          .footer-item a {
+            text-decoration: none;
+            color: gray;
+          }
+          
+          .footer-item a:hover {
+            color: black; /* Optional: Add hover effect */
+          }
+          
+          .footer-social-links a {
+            margin-right: 10px;
+          }
+        </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
@@ -70,7 +101,7 @@
     </div>
   </div>
 </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary " style=" top: 0px;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand logo-heading" href="#"><img src="images/logo.png" alt="" class="logo">SIZZLE  & SPICE</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +117,7 @@
                   </li>
                         <!-- Button trigger modal -->
                   <button type="button" class="btn btn-light" style="width: 100px; height: 50px; margin-top: -4px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <span><i class="fa-solid fa-right-to-bracket" style="margin-right: 0px;"></i></span>&nbsp;&nbsp;LOGIN
+                    <span><i class="fa-solid fa-right-to-bracket" style="margin-right: 0px;"></i></span>&nbsp; LOGIN
                  </button>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle button2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><button class="btn btn-bg-light ">
@@ -108,122 +139,167 @@
             </div>
           </nav>
           <br><br><br>
-          <center>
-            <div class="card mb-3" style="max-width: 1230px; height: 300px;">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="images/c1.jfif" alt="..." height="300px" style="border-radius: 10px; margin-left: -110px;">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Chola buture</h5>
-                    <p class="card-text">A rice dish that's celebrated in the Indian subcontinent, especially among the Islamic community. 
-                      Biryani is a mixed rice dish, mainly popular in South Asia. It is made with rice, some type of meat and spices. To cater to vegetarians, in some cases, it is prepared by substituting vegetables or paneer for the meat. </p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    <div>
-                      <a href="" class="btn btn-outline-primary"> <i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy now</a>&nbsp;
-                      <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
+          <div class="container my-5" >
+            <!-- Main Card Section -->
+            <div class="row justify-content-center">
+              <div class="card mb-3" style="max-width: 1130px; height: 400px;">
+                <div class="row g-0">
+                  <div class="col-md-4 col-12">
+                    <img src="images/page7.avif" alt="..." height="400px" width="100%" style="border-radius: 10px;">
+                  </div>
+                  <div class="col-md-8 col-12" >
+                    <div class="card-body" style="margin-top: 60px;">
+                      <h5 class="card-title">CHOLA BHATURE</h5>
+                      <p class="card-text">Chole bhature is a popular North Indian dish of spicy chickpeas (chole) and deep-fried bread (bhatura). It's often eaten for breakfast or lunch, and can also be a street food. <br>
+                        It is a combination of chana masala (spicy white chickpeas) and bhatura/puri, a deep-fried bread made from maida. Chole bhature is often eaten as a breakfast dish, sometimes accompanied with lassi. </p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                      <div>
+                        <a href="" class="btn btn-outline-primary"> <i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy now</a>&nbsp;
+                        <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>&nbsp;
+                        <a href="#related"><button class="btn btn-outline-danger">related items</button></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </center>
-          <div class="bg-dark">
-            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: aliceblue; text-align: center;" >RECOMMANDED FOR YOU</h1>
+            </div><br><br>
+           
+          
+          <!-- Recommended Section Header -->
+          <div class="bg-dark text-center py-3 mb-4" style="margin-top: 290px;" id="related">
+            <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: aliceblue;">
+              RECOMMENDED FOR YOU
+            </h1>
           </div>
-          <div style="display: flex; margin-left: 70px; box-shadow: 20px;">
-            <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/c2.jfif" class="card-img-top" alt="..." height="250px">
-            
-            <p style="color: white; font-size: 24px; font-weight: 1000; margin-top: -40px;">&nbsp;&nbsp;&nbsp;100/- Flat offer for you</p>
-            <div class="card-body">
-              <h5 class="card-title">Chola buture</h5>
-              <p class="card-text">A North Indian dish that's cooked in a tandoor, or clay oven.The nicest thing about tandoori chicken, though, is that it's really easy to make. </p>
-              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
+            <!-- Recommended Cards Section -->
+            <div class="row justify-content-center" id="related" >
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img src="images/page7.avif" class="card-img-top" alt="Product Image" height="356px">
+                  <div class="card-body">
+                    <h5 class="card-title">Chola bhature with non veg gravy</h5>
+                    <p class="card-text">Rs.390   <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                    <a href="" class="btn btn-outline-primary">
+                      <i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy now
+                    </a>
+                    &nbsp;
+                    <a href="cart.html"><button onclick="addToCart('Sample Product', 'images/card8.jfif')" class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img src="images/page8.avif" class="card-img-top" alt="Product Image" height="356px">
+                  <div class="card-body">
+                    <h5 class="card-title">Chola bhature with veg gravy</h5>
+                    <p class="card-text">Rs.150    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                    <a href="" class="btn btn-outline-primary">
+                      <i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy now
+                    </a>
+                    &nbsp;
+                    <a href="cart.html"><button onclick="addToCart('Sample Product', 'images/card8.jfif')" class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <img src="images/page9.avif" class="card-img-top" alt="Product Image" height="356px">
+                  <div class="card-body">
+                    <h5 class="card-title">kichidi</h5>
+                    <p class="card-text">Rs.100    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                    <a href="" class="btn btn-outline-primary">
+                      <i class="fa-solid fa-bag-shopping"></i>&nbsp;Buy now
+                    </a>
+                    &nbsp;
+                    <a href="cart.html"><button onclick="addToCart('Sample Product', 'images/card8.jfif')" class="btn btn-outline-secondary">
+                      <i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart
+                    </button></a>
+                  </div>
+                </div>
+              </div>
+          
+          <footer class="footer-container">
+            <!-- Logo and Copyright -->
+            <div class="footer-item">
+              <img src="images/logo.png" alt="Spice Logo" height="70px" width="100px" style="border-radius: 10px;">
+              <p>© 2024 Spice Limited</p>
             </div>
-          </div>
-          <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/c3.jfif" class="card-img-top" alt="..." height="250px">
-            <div class="card-body">
-              <h5 class="card-title">Chola buture</h5>
-              <p class="card-text">
-                A flavorful dish that combines sweet, salty, crunchy, spicy, and savory elements, and is popular at street stalls and roadside stands. </p>
-              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
+          
+            <!-- Company Links -->
+            <div class="footer-item">
+              <h3>Company</h3>
+              <a href=""><li>About Us</li></a>
+              <a href=""><li>Spice Corporation</li></a>
+              <a href=""><li>Careers</li></a>
+              <a href=""><li>Terms</li></a>
+              <a href=""><li>Spice One</li></a>
+              <a href=""><li>Spice Instamart</li></a>
+              <a href=""><li>Spice Dineout</li></a>
+              <a href=""><li>Spice Dine</li></a>
             </div>
-          </div>
-          <div class="card" style="width: 310px; margin:50px;">
-            <img src="images/c3.jfif" class="card-img-top" alt="..." height="250px">
-            <div class="card-body">
-              <h5 class="card-title">Chola buture</h5>
-              <p class="card-text">A chewy flatbread made from white flour, yeast, eggs, milk, salt, and sugar, and baked in a tandoor oven</p>
-              <a href="#" class="btn btn-outline-primary"> <i class="fa-solid fa-circle-info"></i>&nbsp;more details</a>&nbsp;
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add to cart</a>
+          
+            <!-- Contact Links -->
+            <div class="footer-item">
+              <h3>Contact Us</h3>
+              <a href=""><li>Help & Support</li></a>
+              <a href=""><li>Partner with Us</li></a>
+              <a href=""><li>Ride with Us</li></a>
+              <a href=""><li>Spice News</li></a>
             </div>
-          </div>
-        </div>
-        <footer style="display: flex; padding-top: 50px;" class="bg-body-tertiary">
-          <ul style="margin-right: 100px;">
-            <img src="images/logo.png" alt="" height="70px" width="100px" style="border-radius: 10px;">
-            <p style="color: gray;">© 2024 spice Limited</p>
-          </ul>
-          <ul style="margin-right: 30px;">
-            <h3>Company</h3>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>About us</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice corporation</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Careers</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Terms</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice one</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice instamart</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice Dineout</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice dine</li></a><br>
-          </ul>
-          <ul  style="margin-right: 30px;">
-            <h3>Contact Us</h3>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Help & Support Us</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Partner With Us</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Ride With Us</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice News</li></a><br>
-          </ul>
-          <ul  style="margin-right: 30px;">
-            <h3>Available In</h3>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Chennai</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Delhi</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Mumbai</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Kolkatha</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Hyderabad</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Bangalore</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Pune</li></a><br>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                200+ cities
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#"><h3>other cities</h3></a></li>
-                <li><a class="dropdown-item" href="#">Thrichy</a></li>
-                <li><a class="dropdown-item" href="#">Salem</a></li>
-                <li><a class="dropdown-item" href="#">Kallakurichi</a></li>
-                <li><a class="dropdown-item" href="#">Namakkal</a></li>
-              </ul>
+          
+            <!-- Available Cities -->
+            <div class="footer-item">
+              <h3>Available In</h3>
+              <a href=""><li>Chennai</li></a>
+              <a href=""><li>Delhi</li></a>
+              <a href=""><li>Mumbai</li></a>
+              <a href=""><li>Kolkata</li></a>
+              <a href=""><li>Hyderabad</li></a>
+              <a href=""><li>Bangalore</li></a>
+              <a href=""><li>Pune</li></a>
+              
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  200+ cities
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"><h3>Other Cities</h3></a></li>
+                  <li><a class="dropdown-item" href="#">Trichy</a></li>
+                  <li><a class="dropdown-item" href="#">Salem</a></li>
+                  <li><a class="dropdown-item" href="#">Kallakurichi</a></li>
+                  <li><a class="dropdown-item" href="#">Namakkal</a></li>
+                </ul>
+              </div>
             </div>
-          </ul>
-          <ul  style="margin-right: 30px;">
-            <h3>Life At Spice</h3>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li></li>Explore With Spice</a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Snacables</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice Genie</li></a><br>
-            <a href="" style="text-decoration: none; color: gray; list-style-type: none;"><li>Spice News</li></a><br>
-          </ul>
-          <ul  style="margin-right: 30px;">
-            <h3>Social Links</h3>
-            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;</a>
-            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;</a>
-            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-telegram"></i>&nbsp;&nbsp;</a>
-            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;</a>
-            <a href="" style="text-decoration: none; color: gray;"><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;</a>
-          </ul>
-        </footer>
+          
+            <!-- Life at Spice -->
+            <div class="footer-item">
+              <h3>Life At Spice</h3>
+              <a href=""><li>Explore with Spice</li></a>
+              <a href=""><li>Snacables</li></a>
+              <a href=""><li>Spice Genie</li></a>
+              <a href=""><li>Spice News</li></a>
+            </div>
+          
+            <!-- Social Links -->
+            <div class="footer-item footer-social-links">
+           
+            </div>
+             <!-- Social Links -->
+             <div class="footer-item footer-social-links">
+              <h3>Social Links</h3>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </footer>
+        
           </body>
 </html>
